@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    .row{
+        left: 50%;
+      }
+    .box{
+      height: 150px;
+      width: 500px;
+    }
+    .box1{
+      border-radius:20px 20px 0 0;
+    }
+    .box2{
+      border-radius: 0 0 20px 20px;
+    }
+    @media (min-width: 768px) {
+      .row{
+        left: 30%;
+      }
+      .box{
+      height: 500px;
+      width: 300px;
+    }
+    .box1{
+      border-radius:20px 0 0 20px;
+    }
+    .box2{
+      border-radius: 0 20px 20px 0;
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <img src="https://picsum.photos/1920/1080/?random=1" class="position-fixed start-0">
+  <div class="container-fluid overflow-scroll text-white">
+
+    <div class="row position-absolute h-50  top-50 translate-middle d-flex flex-md-column ">
+      <div class="box col-12 col-md-auto border border-white d-flex justify-content-center align-items-center text-center box1" style="font-size:40px">backdrop-filter效果</div>
+      <div class="box col-12 col-md-auto border border-white d-flex justify-content-center align-items-center text-center" style="backdrop-filter: none;">backdrop-filter: none</div>
+      <div class="box col-12 col-md-auto border border-white d-flex justify-content-center align-items-center text-center" style="backdrop-filter: grayscale(1);">backdrop-filter: grayscale(1)</div>
+      <div class="box col-12 col-md-auto border border-white d-flex justify-content-center align-items-center text-center" style="backdrop-filter: brightness(1.5);">backdrop-filter: brightness(1.5)</div>
+      <div class="box col-12 col-md-auto border border-white d-flex justify-content-center align-items-center text-center" style="backdrop-filter: blur(5px);">backdrop-filter: blur(5px)</div>
+      <div class="box col-12 col-md-auto border border-white d-flex justify-content-center align-items-center text-center" style="backdrop-filter: contrast(0.8);">backdrop-filter: contrast(0.8)</div>
+      <div class="box col-12 col-md-auto border border-white d-flex justify-content-center align-items-center text-center" style="backdrop-filter: invert(0.7);">backdrop-filter: invert(0.7)</div>
+      <div class="box col-12 col-md-auto border border-white d-flex justify-content-center align-items-center text-center" style="backdrop-filter: opacity(0.4);">backdrop-filter: opacity(0.4)</div>
+      <div class="box col-12 col-md-auto border border-white d-flex justify-content-center align-items-center text-center" style="backdrop-filter: sepia(0.4);">backdrop-filter: sepia(0.4)</div>
+      <div class="box col-12 col-md-auto border border-white d-flex justify-content-center align-items-center text-center" style="backdrop-filter: saturate(1.8);">backdrop-filter: saturate(1.8)</div>
+      <div class="box col-12 col-md-auto border border-white d-flex justify-content-center align-items-center text-center box2" style="backdrop-filter: hue-rotate(120deg);">backdrop-filter: hue-rotate(120deg)</div>
+    </div>
+
+  </div>
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
